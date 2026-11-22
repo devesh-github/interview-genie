@@ -1,0 +1,168 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px max(24px, calc((100% - 1100px) / 2));
+  background: #fff;
+  border-bottom: 1px solid #e5e9f0;
+}
+
+.brand {
+  font-size: 21px;
+  font-weight: 800;
+  color: #2459dc;
+}
+
+.version {
+  font-size: 12px;
+  color: #667085;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.intro {
+  margin-bottom: 35px;
+}
+
+.eyebrow {
+  color: #2459dc;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+h1 {
+  font-size: clamp(28px, 4vw, 40px);
+  letter-spacing: -1px;
+  margin: 12px 0;
+}
+
+.intro p, .muted {
+  color: #667085;
+  line-height: 1.6;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.panel {
+  background: white;
+  padding: 30px;
+  border: 1px solid #e5e9f0;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px #17203308;
+}
+
+.panel h2 {
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d6dce7;
+  border-radius: 8px;
+  font: inherit;
+  background: white;
+  color: #172033;
+}
+
+input:focus, select:focus {
+  outline: 2px solid #9bb8ff;
+  border-color: #2459dc;
+}
+
+button {
+  padding: 13px 18px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #2459dc;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.message {
+  padding: 14px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background: #e9efff;
+}
+
+.skills {
+  margin-top: 25px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid #e5e9f0;
+}
+
+.skill small {
+  display: block;
+  color: #667085;
+  margin-top: 5px;
+}
+
+button.delete {
+  background: #fff0f0;
+  color: #b42318;
+  padding: 9px 12px;
+  margin: 0;
+}
+
+@media (max-width: 750px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    padding: 20px 24px;
+  }
+
+  .panel {
+    padding: 22px;
+  }
+}
