@@ -1,0 +1,9 @@
+name: InterviewGenie CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  # Keep your existing backend-tests and frontend-build jobs here.
